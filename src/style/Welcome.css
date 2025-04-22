@@ -1,0 +1,58 @@
+/* Welcome Section */
+.experience {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience h1 {
+    font-size: 2.5rem;
+    color: #3C6E71; /* Teal Green */
+    margin-bottom: 20px;
+  }
+  
+  .experience p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .experience p::before {
+    content: '"';
+    font-size: 3rem;
+    color: #3C6E71;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+  }
+  
+  .experience p::after {
+    content: '"';
+    font-size: 3rem;
+    color: #3C6E71;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience h1 {
+      font-size: 2rem;
+    }
+  
+    .experience p {
+      font-size: 1rem;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  

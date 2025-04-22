@@ -1,0 +1,146 @@
+{
+    "tours": [
+      {
+        "title": "Munnar, Kerala",
+        "image": "https://media.istockphoto.com/id/511119924/photo/tea-plantations-and-river-in-hills-kerala-india.jpg?s=612x612&w=0&k=20&c=pYHem1q8SIdCC7t7pv3s6QM1ZrmU3nkCoSaEQMg8vqg=",
+        "link": "../assets/pages/munnar.html",
+        "description": "Explore the tea gardens, waterfalls, and serene hills of Munnar, a perfect hill station retreat.",
+        "duration": "3 Days / 2 Nights",
+        "bestTime": "October to March",
+        "itinerary": [
+          "Day 1: Arrival and local sightseeing – Tea Museum, Blossom Park",
+          "Day 2: Visit Mattupetty Dam, Echo Point, Kundala Lake",
+          "Day 3: Eravikulam National Park and departure"
+        ]
+      },
+      {
+        "title": "Darjeeling, West Bengal",
+        "image": "https://media.istockphoto.com/id/670688480/photo/green-tea-plantations-munnar-kerala-india.jpg?s=612x612&w=0&k=20&c=b09pbKjviHDfBg4sviMO5Pjwq_KhcpgsMHquKrLQBdU=",
+        "link": "../assets/pages/darjeeling.html",
+        "description": "Known for its scenic views, toy train rides, and tea estates nestled in the Himalayas.",
+        "duration": "4 Days / 3 Nights",
+        "bestTime": "April to June",
+        "itinerary": [
+          "Day 1: Arrival and leisure walk around Mall Road",
+          "Day 2: Visit Tiger Hill, Batasia Loop, Ghoom Monastery",
+          "Day 3: Explore Rock Garden, Himalayan Mountaineering Institute",
+          "Day 4: Tea estate visit and departure"
+        ]
+      },
+      {
+        "title": "Manali, Himachal Pradesh",
+        "image": "https://t4.ftcdn.net/jpg/01/71/19/19/360_F_171191968_h1yWvnUTa0MM6iIBnGdAHZeUAJEh9dBh.jpg",
+        "link": "../assets/pages/manali.html",
+        "description": "A favorite destination for snow, adventure sports, and beautiful valleys.",
+        "duration": "5 Days / 4 Nights",
+        "bestTime": "October to February",
+        "itinerary": [
+          "Day 1: Arrival and Hadimba Temple visit",
+          "Day 2: Solang Valley adventure activities",
+          "Day 3: Rohtang Pass excursion",
+          "Day 4: Manikaran and Kullu trip",
+          "Day 5: Local shopping and departure"
+        ]
+      },
+      {
+        "title": "Ooty, Tamil Nadu",
+        "image": "https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b290eSUyQyUyMGluZGlhfGVufDB8fDB8fHww",
+        "link": "../assets/pages/ooty.html",
+        "description": "The Queen of Hill Stations offering lakes, gardens, and mountain train rides.",
+        "duration": "3 Days / 2 Nights",
+        "bestTime": "April to June",
+        "itinerary": [
+          "Day 1: Arrival and Ooty Lake boating",
+          "Day 2: Botanical Garden, Rose Garden, Doddabetta Peak",
+          "Day 3: Nilgiri Mountain Railway ride and departure"
+        ]
+      },
+      {
+        "title": "Goa",
+        "image": "https://media.istockphoto.com/id/157579910/photo/the-beach.jpg?b=1&s=612x612&w=0&k=20&c=Qf97ZJ4R9U75zvns-VccScnXSWsknESWAIgWUOgx4RY=",
+        "link": "../assets/pages/goa.html",
+        "description": "Sun, sand, and sea! Goa is the perfect place for beach lovers and partygoers.",
+        "duration": "4 Days / 3 Nights",
+        "bestTime": "November to February",
+        "itinerary": [
+          "Day 1: Arrival and relax at Baga Beach",
+          "Day 2: North Goa tour – Fort Aguada, Anjuna, Vagator",
+          "Day 3: South Goa tour – Basilica of Bom Jesus, Colva Beach",
+          "Day 4: Local shopping and departure"
+        ]
+      },
+      {
+        "title": "Shillong, Meghalaya",
+        "image": "https://www.naturetravelagency.com/uploads/1709991285best%20time%20to%20go%20to%20meghalaya.jpg",
+        "link": "../assets/pages/shillong.html",
+        "description": "Known as the 'Scotland of the East', filled with waterfalls, caves, and rich culture.",
+        "duration": "4 Days / 3 Nights",
+        "bestTime": "September to May",
+        "itinerary": [
+          "Day 1: Arrival and explore Umiam Lake",
+          "Day 2: Shillong sightseeing – Wards Lake, Don Bosco Museum",
+          "Day 3: Day trip to Cherrapunjee – Mawsmai Caves, Nohkalikai Falls",
+          "Day 4: Local market visit and departure"
+        ]
+      },
+      {
+        "title": "Jaipur, Rajasthan",
+        "image": "https://media.istockphoto.com/id/635726330/photo/nahargarh-fort.jpg?s=612x612&w=0&k=20&c=z1hztb9BT6YhxT--G_cW8hBmBHWzrFdwbfM0Pc2jATI=",
+        "link": "../assets/pages/jaipur.html",
+        "description": "Experience royal palaces, forts, and vibrant markets in the Pink City.",
+        "duration": "3 Days / 2 Nights",
+        "bestTime": "October to March",
+        "itinerary": [
+          "Day 1: Arrival and visit to Hawa Mahal, City Palace",
+          "Day 2: Amber Fort, Jal Mahal, Jantar Mantar",
+          "Day 3: Local shopping in Bapu Bazaar and departure"
+        ]
+      },
+      {
+        "title": "Varanasi, Uttar Pradesh",
+        "image": "https://t3.ftcdn.net/jpg/02/05/83/04/360_F_205830468_Hyhd2IjABzdiiDcheTxotWR9SWCiGjtN.jpg",
+        "link": "../assets/pages/varanasi.html",
+        "description": "The spiritual heart of India with ancient temples and Ganga aarti rituals.",
+        "duration": "2 Days / 1 Night",
+        "bestTime": "October to March",
+        "itinerary": [
+          "Day 1: Arrival, temple visits, evening Ganga Aarti at Dashashwamedh Ghat",
+          "Day 2: Morning boat ride, Sarnath visit and departure"
+        ]
+      },
+      {
+        "title": "Andaman Islands",
+        "image": "https://st3.depositphotos.com/10177508/13452/i/450/depositphotos_134520512-stock-photo-loh-sa-ma-bay-the.jpg",
+        "link": "../assets/pages/andaman.html",
+        "description": "Tropical paradise with pristine beaches, coral reefs, and historic sites.",
+        "duration": "6 Days / 5 Nights",
+        "bestTime": "November to May",
+        "itinerary": [
+          "Day 1: Arrival at Port Blair and visit Cellular Jail",
+          "Day 2: Havelock Island – Radhanagar Beach",
+          "Day 3: Scuba diving and leisure",
+          "Day 4: Neil Island excursion",
+          "Day 5: Ross Island and North Bay Island",
+          "Day 6: Local shopping and departure"
+        ]
+      },
+      {
+        "title": "Leh-Ladakh",
+        "image": "https://cdn.pixabay.com/photo/2017/05/10/13/39/ladakh-2300904_640.jpg",
+        "link": "../assets/pages/ladakh.html",
+        "description": "High-altitude desert, stunning landscapes, and peaceful monasteries.",
+        "duration": "7 Days / 6 Nights",
+        "bestTime": "May to September",
+        "itinerary": [
+          "Day 1: Arrival in Leh and acclimatization",
+          "Day 2: Local sightseeing – Shanti Stupa, Leh Palace",
+          "Day 3: Nubra Valley via Khardung La",
+          "Day 4: Diskit Monastery and return to Leh",
+          "Day 5: Pangong Lake excursion",
+          "Day 6: Hemis and Thiksey monasteries",
+          "Day 7: Departure"
+        ]
+      }
+    ]
+  }
+  
