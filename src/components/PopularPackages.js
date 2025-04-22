@@ -1,6 +1,6 @@
-// PopularTours.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
+
+import React from "react";
+import { Link } from "react-router-dom";
 import "../style/PopularPackages.css";
 
 function PopularTours({ tours }) {
@@ -14,8 +14,12 @@ function PopularTours({ tours }) {
               <img src={tour.image} alt={tour.title} />
               <h3>{tour.title}</h3>
               <p>{tour.description}</p>
-              <p><strong>Duration:</strong> {tour.duration}</p>
-              <p><strong>Best Time:</strong> {tour.bestTime}</p>
+              <p>
+                <strong>Duration:</strong> {tour.duration}
+              </p>
+              <p>
+                <strong>Best Time:</strong> {tour.bestTime}
+              </p>
               <Link to={`/tours/${index}`}>View More</Link>
             </div>
           ))

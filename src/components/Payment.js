@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/Payment.css";
 
 function PaymentPage() {
@@ -7,17 +7,17 @@ function PaymentPage() {
   const [bookingData, setBookingData] = useState(null);
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem('setPackages'));
+    const data = JSON.parse(localStorage.getItem("setPackages"));
     if (data) {
       setBookingData(data);
     } else {
-      navigate('/');
+      navigate("/");
     }
   }, [navigate]);
 
   const handleConfirmPayment = () => {
-    alert('Payment Successful! 🎉');
-    navigate('/');
+    alert("Payment Successful! 🎉");
+    navigate("/");
   };
 
   if (!bookingData) return null;

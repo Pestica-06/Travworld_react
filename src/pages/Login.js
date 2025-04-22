@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase"; // Make sure this path is correct
-import '../style/Login.css'; // Import the CSS
+import { auth } from "../firebase";
+import "../style/Login.css";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const loginUser = async () => {
     try {
@@ -19,8 +19,16 @@ function Login() {
   return (
     <div className="login-container">
       <h2>Login</h2>
-      <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
-      <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
+      <input
+        type="email"
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email"
+      />
+      <input
+        type="password"
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Password"
+      />
       <button onClick={loginUser}>Log in</button>
     </div>
   );

@@ -1,13 +1,12 @@
-// src/App.js
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import TourDetails from './components/TourDetails';
-import BookingPage from './components/BookingPage';
-import PaymentPage from './components/Payment';
-import SignUp from './pages/SignUp';
-import Profile from './components/Profile';
-import { auth } from './firebase/firebaseConfiq';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import TourDetails from "./components/TourDetails";
+import BookingPage from "./components/BookingPage";
+import PaymentPage from "./components/Payment";
+import SignUp from "./pages/SignUp";
+import Profile from "./components/Profile";
+import { auth } from "./firebase/firebaseConfiq";
 
 function App() {
   const [user, setUser] = useState(null);

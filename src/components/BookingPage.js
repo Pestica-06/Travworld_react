@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/BookingPage.css";
 
 function BookingPage() {
@@ -7,19 +7,19 @@ function BookingPage() {
   const [tourData, setTourData] = useState(null);
   const [adults, setAdults] = useState(0);
   const [kids, setKids] = useState(0);
-  const [travelDate, setTravelDate] = useState('');
+  const [travelDate, setTravelDate] = useState("");
   const [total, setTotal] = useState(0);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const adultPrice = 500;
   const kidPrice = 250;
 
   useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem('selectedTour'));
+    const stored = JSON.parse(localStorage.getItem("selectedTour"));
     if (stored) {
       setTourData(stored);
     } else {
-      navigate('/');
+      navigate("/");
     }
   }, [navigate]);
 
@@ -37,25 +37,25 @@ function BookingPage() {
   };
 
   const handleBooking = () => {
-    setError('');
+    setError("");
 
     if (!isFutureDate(travelDate)) {
-      setError('Please select a valid future date');
+      setError("Please select a valid future date");
       return;
     }
 
     if (adults + kids < 1) {
-      setError('Please select at least one traveler.');
+      setError("Please select at least one traveler.");
       return;
     }
 
     if (adults + kids < 5) {
-      setError('Minimum group size is 5 people.');
+      setError("Minimum group size is 5 people.");
       return;
     }
 
     if (total < 1000) {
-      setError('Total price must be at least 1000 Rs.');
+      setError("Total price must be at least 1000 Rs.");
       return;
     }
 
@@ -67,20 +67,22 @@ function BookingPage() {
       total,
     };
 
-    localStorage.setItem('setPackages', JSON.stringify(bookingDetails));
-    navigate('/payment');
+    localStorage.setItem("setPackages", JSON.stringify(bookingDetails));
+    navigate("/payment");
   };
 
   if (!tourData) return null;
 
   const today = new Date();
-  const date = today.toISOString().split('T')[0]; // format: YYYY-MM-DD
+  const date = today.toISOString().split("T")[0]; 
 
   return (
     <section className="booking-page">
       <div className="header">
         <h1>Discover the World with Us</h1>
-        <p>"The world is a book and those who do not travel read only one page."</p>
+        <p>
+          "The world is a book and those who do not travel read only one page."
+        </p>
       </div>
 
       <div className="details">
@@ -89,16 +91,30 @@ function BookingPage() {
           <img
             src={tourData.image}
             alt={tourData.title}
-            style={{ width: '100%', maxWidth: '600px' }}
+            style={{ width: "100%", maxWidth: "600px" }}
           />
         )}
-        <p><strong>Duration:</strong> {tourData.duration}</p>
-        <p><strong>Price per Adult:</strong> ₹{adultPrice}</p>
-        <p><strong>Price per Kid:</strong> ₹{kidPrice}</p>
-        <p><strong>Description:</strong> {tourData.description}</p>
-        <p><strong>Food:</strong> Included</p>
-        <p><strong>Night Stay:</strong> Included</p>
-        <p><strong>Group Size:</strong> Minimum 5 people</p>
+        <p>
+          <strong>Duration:</strong> {tourData.duration}
+        </p>
+        <p>
+          <strong>Price per Adult:</strong> ₹{adultPrice}
+        </p>
+        <p>
+          <strong>Price per Kid:</strong> ₹{kidPrice}
+        </p>
+        <p>
+          <strong>Description:</strong> {tourData.description}
+        </p>
+        <p>
+          <strong>Food:</strong> Included
+        </p>
+        <p>
+          <strong>Night Stay:</strong> Included
+        </p>
+        <p>
+          <strong>Group Size:</strong> Minimum 5 people
+        </p>
       </div>
 
       <div className="bottom-section">
@@ -113,7 +129,9 @@ function BookingPage() {
               min="0"
               onChange={(e) => setAdults(Number(e.target.value))}
             />
-            <p>{adults} Adults = ₹{adults * adultPrice}</p>
+            <p>
+              {adults} Adults = ₹{adults * adultPrice}
+            </p>
           </div>
 
           <div>
@@ -124,7 +142,9 @@ function BookingPage() {
               min="0"
               onChange={(e) => setKids(Number(e.target.value))}
             />
-            <p>{kids} Kids = ₹{kids * kidPrice}</p>
+            <p>
+              {kids} Kids = ₹{kids * kidPrice}
+            </p>
           </div>
         </div>
 
@@ -138,10 +158,12 @@ function BookingPage() {
           />
         </div>
 
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <p style={{ color: "red" }}>{error}</p>}
 
         <h3>Total: ₹{total}</h3>
-        <button className="book-btn" onClick={handleBooking}>Book</button>
+        <button className="book-btn" onClick={handleBooking}>
+          Book
+        </button>
       </div>
 
       <div className="footer">

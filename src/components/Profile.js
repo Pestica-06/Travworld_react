@@ -1,15 +1,15 @@
-// src/components/Profile.js
-import React from 'react';
-import { auth } from '../firebase/firebaseConfiq';
-import { useNavigate } from 'react-router-dom';
-import '../style/Profile.css';
+
+import React from "react";
+import { auth } from "../firebase/firebaseConfiq";
+import { useNavigate } from "react-router-dom";
+import "../style/Profile.css";
 
 function Profile() {
   const navigate = useNavigate();
 
   const logout = () => {
     auth.signOut();
-    navigate('/signup');
+    navigate("/signup");
   };
 
   return (

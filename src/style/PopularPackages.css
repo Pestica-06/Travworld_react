@@ -1,10 +1,9 @@
-/* Popular Tours */
+
 .popular-tours {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 40px 20px;
   max-width: 1200px;
   margin: 80px auto 0;
-  /* Removed background and border-radius */
   box-shadow: none;
   color: #333;
 }
@@ -12,7 +11,7 @@
 .popular-tours h1 {
   font-size: 2.5rem;
   text-align: center;
-  color: #3C6E71;
+  color: #3c6e71;
   margin-bottom: 40px;
 }
 
@@ -47,7 +46,7 @@
 
 .tour-card h3 {
   font-size: 1.5rem;
-  color: #3C6E71;
+  color: #3c6e71;
   margin: 10px 0;
 }
 
@@ -59,14 +58,14 @@
 }
 
 .tour-card p strong {
-  color:  #353535;
+  color: #353535;
 }
 
 .tour-card a {
   display: inline-block;
   margin-top: 15px;
   color: #fff;
-  background-color: #3C6E71;
+  background-color: #3c6e71;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 1rem;
@@ -78,7 +77,7 @@
   background-color: #2c5356;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .popular-tours h1 {
     font-size: 2rem;

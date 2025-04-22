@@ -1,7 +1,7 @@
-import React from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import data from '../data/packages.json';
-import "../style/TourDetails.css"
+import React from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import data from "../data/packages.json";
+import "../style/TourDetails.css";
 
 function TourDetails() {
   const { id } = useParams();
@@ -11,19 +11,18 @@ function TourDetails() {
   if (!tour) return <h2>Tour Not Found</h2>;
 
   const handleBooking = () => {
-    
-    const {title,price,duration,description,image} = tour;
+    const { title, price, duration, description, image } = tour;
     localStorage.setItem(
-      'selectedTour',
+      "selectedTour",
       JSON.stringify({
         title,
         price,
         duration,
         description: description,
-        image: image, 
+        image: image,
       })
     );
-    navigate('/booking');
+    navigate("/booking");
   };
 
   return (
@@ -33,11 +32,17 @@ function TourDetails() {
         <img
           src={tour.image}
           alt={tour.title}
-          style={{ width: '100%', maxWidth: '600px' }}
+          style={{ width: "100%", maxWidth: "600px" }}
         />
-        <p><strong>Description:</strong> {tour.description}</p>
-        <p><strong>Duration:</strong> {tour.duration}</p>
-        <p><strong>Best Time to Visit:</strong> {tour.bestTime}</p>
+        <p>
+          <strong>Description:</strong> {tour.description}
+        </p>
+        <p>
+          <strong>Duration:</strong> {tour.duration}
+        </p>
+        <p>
+          <strong>Best Time to Visit:</strong> {tour.bestTime}
+        </p>
 
         {/* Itinerary */}
         {tour.itinerary && (
@@ -52,7 +57,7 @@ function TourDetails() {
         )}
 
         {/* Button */}
-        <div style={{ marginTop: '1rem' }}>
+        <div style={{ marginTop: "1rem" }}>
           <button onClick={handleBooking}>Book Now</button>
         </div>
 

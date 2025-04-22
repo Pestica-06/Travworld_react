@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -43,7 +43,7 @@ nav ul li:hover {
 
 /* Hero Section */
 .hero {
-  background: url('/images/hero.jpg') no-repeat center center/cover;
+  background: url("/images/hero.jpg") no-repeat center center/cover;
   height: 400px;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@ nav ul li:hover {
 .search-bar {
   background-color: white;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: -50px auto 40px;
   width: 90%;
   max-width: 800px;
@@ -117,7 +117,7 @@ nav ul li:hover {
 .package-card {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -183,7 +183,7 @@ nav ul li:hover {
   padding: 20px;
   border-radius: 10px;
   width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Welcome Section */

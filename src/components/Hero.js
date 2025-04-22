@@ -1,5 +1,5 @@
-// Hero.jsx
-import React from 'react';
+
+import React from "react";
 import picture from "../assets/images/pamban-bridge-.webp";
 import "../style/Home.css";
 
