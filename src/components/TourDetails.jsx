@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import data from "../data/packages.json";
+import data from "../data/TourPackages.json";
 import "../style/TourDetails.css";
 
 function TourDetails() {

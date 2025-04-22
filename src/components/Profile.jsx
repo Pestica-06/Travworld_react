@@ -1,6 +1,6 @@
 
 import React from "react";
-import { auth } from "../firebase/firebaseConfiq";
+import { auth } from "../firebase/firebaseConfig";
 import { useNavigate } from "react-router-dom";
 import "../style/Profile.css";
 
