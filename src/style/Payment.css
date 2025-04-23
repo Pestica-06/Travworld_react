@@ -13,12 +13,12 @@
 
 .header h1 {
   font-size: 2.5rem;
-  color: #3c6e71;
+  color: white;
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #666;
+  color: white;
 }
 
 .payment-details {

@@ -10,6 +10,7 @@ function Profile() {
   const logout = () => {
     auth.signOut();
     navigate("/signup");
+    navigate("/");
   };
 
   return (

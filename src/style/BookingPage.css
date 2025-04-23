@@ -1,98 +1,148 @@
 .booking-page {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
-  background-color: #f5f5f5;
-  color: #353535;
+  background: linear-gradient(to bottom right, #e8f0f2, #f5f5f5);
+  color: #2e2e2e;
+  min-height: 100vh;
 }
 
 .header {
   text-align: center;
   background-color: #3c6e71;
-  color: #fff;
-  padding: 40px 20px;
-  border-radius: 12px;
-  margin-bottom: 30px;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
 }
 
 .header p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-style: italic;
+  color:white;
 }
 
 .details {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
 
 .details h2 {
   color: #3c6e71;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 .details img {
-  border-radius: 12px;
-  margin: 20px 0;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 16px;
+  margin: 25px 0;
+  display: block;
+}
+
+.details p {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
 }
 
 .bottom-section {
   background-color: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 .bottom-section h2 {
   color: #3c6e71;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
 }
 
 .price-calculator > div,
 .date-selection {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .price-calculator label,
 .date-selection label {
   font-weight: 600;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 input[type="number"],
 input[type="date"] {
   width: 100%;
-  max-width: 200px;
-  padding: 8px;
+  max-width: 220px;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #3c6e71;
 }
 
 .book-btn {
   background-color: #3c6e71;
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .book-btn:hover {
-  background-color: #2c5356;
+  background-color: #295154;
+  transform: scale(1.02);
+}
+
+.book-btn:active {
+  transform: scale(0.98);
 }
 
 .footer {
   text-align: center;
-  margin-top: 40px;
-  padding: 15px;
-  color: #666;
-  font-size: 0.9rem;
+  margin-top: 50px;
+  padding: 20px;
+  color: #777;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+}
+
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+  }
+
+  .details h2,
+  .bottom-section h2 {
+    font-size: 1.5rem;
+  }
+
+  input[type="number"],
+  input[type="date"] {
+    max-width: 100%;
+  }
 }
