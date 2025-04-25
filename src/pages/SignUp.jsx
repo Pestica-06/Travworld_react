@@ -21,6 +21,7 @@ function SignUp() {
         await createUserWithEmailAndPassword(auth, email, password);
       }
       navigate("/profile");
+      navigate("/");
     } catch (err) {
       alert(err.message);
     }
@@ -49,7 +50,7 @@ function SignUp() {
       </p>
 
       <div className="demo">
-        <p>For demo log in with email "pestica@gmail.com" & password "Pestica@22"</p>
+        <p>For demo log in with email "demo@gmail.com" & password "demo@25"</p>
       </div>
     </div>
   );

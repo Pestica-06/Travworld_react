@@ -76,11 +76,6 @@ nav {
   background-color: #ddd;
 }
 
-.login-register img {
-  width: 30px; 
-  height: 30px;
-  border-radius: 50%;
-}
 
 .menu-icon {
   display: none; 
@@ -169,7 +164,7 @@ nav {
 
 .search-container button {
   padding: 8px 16px;
-  background-color: #0077ff;
+  background-color: #2b5153;
   color: white;
   border: none;
   border-radius: 5px;
@@ -342,7 +337,6 @@ footer {
   text-align: center;
   position: relative;
   bottom: 0;
-  width: 100%;
 }
 
 .footer-top h3 {

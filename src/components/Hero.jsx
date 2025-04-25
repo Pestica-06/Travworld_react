@@ -1,6 +1,6 @@
 
 import React from "react";
-import picture from "../assets/images/pamban-bridge-.webp";
+import picture from "../assets/images/landscape.jpeg";
 import "../style/Home.css";
 
 function Hero({ searchTerm, setSearchTerm }) {

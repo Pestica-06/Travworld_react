@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import data from "../data/TourPackages.json";
+import data from "../config/TourPackages.json";
 import "../style/TourDetails.css";
 
 function TourDetails() {
@@ -44,7 +44,6 @@ function TourDetails() {
           <strong>Best Time to Visit:</strong> {tour.bestTime}
         </p>
 
-        {/* Itinerary */}
         {tour.itinerary && (
           <>
             <h2>Itinerary</h2>
@@ -56,7 +55,7 @@ function TourDetails() {
           </>
         )}
 
-        {/* Button */}
+
         <div style={{ marginTop: "1rem" }}>
           <button onClick={handleBooking}>Book Now</button>
         </div>

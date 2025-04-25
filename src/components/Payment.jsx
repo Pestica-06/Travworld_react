@@ -63,6 +63,7 @@ function PaymentPage() {
           <input
             type="text"
             placeholder="Card Number"
+            maxLength={16}
             value={cardNumber}
             onChange={(e) => setCardNumber(e.target.value)}
           />
@@ -75,7 +76,7 @@ function PaymentPage() {
             />
             <input
               type="password"
-              placeholder="CVV"
+              placeholder="CVV" maxLength={3}
               value={cvv}
               onChange={(e) => setCvv(e.target.value)}
             />

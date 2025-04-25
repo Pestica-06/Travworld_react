@@ -6,7 +6,7 @@ import Features from "../components/Features";
 import Welcome from "../components/Welcome";
 import EnquiryForm from "../components/EnquiryForm";
 import Footer from "../components/Footer";
-import data from "../data/TourPackages.json";
+import data from "../config/TourPackages.json";
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState("");
